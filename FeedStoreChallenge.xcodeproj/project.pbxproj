@@ -23,6 +23,7 @@
 		3B065AA026051334009B5A6B /* RealmFeedStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B065A9F26051334009B5A6B /* RealmFeedStore.swift */; };
 		3B065AA7260514D2009B5A6B /* RealmFeedImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B065AA6260514D2009B5A6B /* RealmFeedImage.swift */; };
 		3B065AAB260514DF009B5A6B /* RealmFeed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B065AAA260514DF009B5A6B /* RealmFeed.swift */; };
+		3B065AB026051B46009B5A6B /* XCTestCase+MemoryLeakTracking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B065AAF26051B46009B5A6B /* XCTestCase+MemoryLeakTracking.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		3B065A9F26051334009B5A6B /* RealmFeedStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmFeedStore.swift; sourceTree = "<group>"; };
 		3B065AA6260514D2009B5A6B /* RealmFeedImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmFeedImage.swift; sourceTree = "<group>"; };
 		3B065AAA260514DF009B5A6B /* RealmFeed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmFeed.swift; sourceTree = "<group>"; };
+		3B065AAF26051B46009B5A6B /* XCTestCase+MemoryLeakTracking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCTestCase+MemoryLeakTracking.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +111,7 @@
 		08CE2B982285BBD100183A1B /* Tests */ = {
 			isa = PBXGroup;
 			children = (
+				3B065AAE26051B2C009B5A6B /* Helpers */,
 				08CE2BA92285BCE700183A1B /* FeedStoreSpecs */,
 				08CE2BB42285BEF100183A1B /* FeedStoreChallengeTests.swift */,
 				084BB13B24FE50A10091C705 /* FeedStoreIntegrationTests.swift */,
@@ -146,6 +149,14 @@
 				3B065AAA260514DF009B5A6B /* RealmFeed.swift */,
 			);
 			path = Objects;
+			sourceTree = "<group>";
+		};
+		3B065AAE26051B2C009B5A6B /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				3B065AAF26051B46009B5A6B /* XCTestCase+MemoryLeakTracking.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -279,6 +290,7 @@
 			files = (
 				08CE2BB22285BCE700183A1B /* XCTestCase+FailableDeleteFeedStoreSpecs.swift in Sources */,
 				08CE2BB02285BCE700183A1B /* FeedStoreSpecs.swift in Sources */,
+				3B065AB026051B46009B5A6B /* XCTestCase+MemoryLeakTracking.swift in Sources */,
 				084BB13C24FE50A10091C705 /* FeedStoreIntegrationTests.swift in Sources */,
 				08CE2BB12285BCE700183A1B /* XCTestCase+FailableRetrieveFeedStoreSpecs.swift in Sources */,
 				08CE2BAF2285BCE700183A1B /* XCTestCase+FeedStoreSpecs.swift in Sources */,

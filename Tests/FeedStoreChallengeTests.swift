@@ -93,10 +93,13 @@ class FeedStoreChallengeTests: XCTestCase, FeedStoreSpecs {
 	
 	// - MARK: Helpers
 	
-	private func makeSUT() throws -> FeedStore {
+	private func makeSUT(file: StaticString = #filePath, line: UInt = #line) throws -> FeedStore {
 		let configuration = RealmFeedStore.Configuration(inMemoryIdentifier: String(describing: type(of: Self.self)))
+		let sut = try RealmFeedStore(configuration: configuration)
 
-		return try RealmFeedStore(configuration: configuration)
+		trackForMemoryLeaks(sut, file: file, line: line)
+
+		return sut
 	}
 	
 }
