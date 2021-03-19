@@ -21,6 +21,8 @@
 		3B065A9026051267009B5A6B /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 3B065A8F26051267009B5A6B /* Realm */; };
 		3B065A9226051267009B5A6B /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 3B065A9126051267009B5A6B /* RealmSwift */; };
 		3B065AA026051334009B5A6B /* RealmFeedStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B065A9F26051334009B5A6B /* RealmFeedStore.swift */; };
+		3B065AA7260514D2009B5A6B /* RealmFeedImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B065AA6260514D2009B5A6B /* RealmFeedImage.swift */; };
+		3B065AAB260514DF009B5A6B /* RealmFeed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B065AAA260514DF009B5A6B /* RealmFeed.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		08CE2BAE2285BCE700183A1B /* XCTestCase+FailableInsertFeedStoreSpecs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "XCTestCase+FailableInsertFeedStoreSpecs.swift"; sourceTree = "<group>"; };
 		08CE2BB42285BEF100183A1B /* FeedStoreChallengeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedStoreChallengeTests.swift; sourceTree = "<group>"; };
 		3B065A9F26051334009B5A6B /* RealmFeedStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmFeedStore.swift; sourceTree = "<group>"; };
+		3B065AA6260514D2009B5A6B /* RealmFeedImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmFeedImage.swift; sourceTree = "<group>"; };
+		3B065AAA260514DF009B5A6B /* RealmFeed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmFeed.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,9 +133,19 @@
 		3B065A9E26051328009B5A6B /* RealmFeedStore */ = {
 			isa = PBXGroup;
 			children = (
+				3B065AA5260514C4009B5A6B /* Objects */,
 				3B065A9F26051334009B5A6B /* RealmFeedStore.swift */,
 			);
 			path = RealmFeedStore;
+			sourceTree = "<group>";
+		};
+		3B065AA5260514C4009B5A6B /* Objects */ = {
+			isa = PBXGroup;
+			children = (
+				3B065AA6260514D2009B5A6B /* RealmFeedImage.swift */,
+				3B065AAA260514DF009B5A6B /* RealmFeed.swift */,
+			);
+			path = Objects;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -254,6 +268,8 @@
 				08CE2BA62285BCB600183A1B /* FeedStore.swift in Sources */,
 				3B065AA026051334009B5A6B /* RealmFeedStore.swift in Sources */,
 				08CE2BA82285BCC600183A1B /* LocalFeedImage.swift in Sources */,
+				3B065AA7260514D2009B5A6B /* RealmFeedImage.swift in Sources */,
+				3B065AAB260514DF009B5A6B /* RealmFeed.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
