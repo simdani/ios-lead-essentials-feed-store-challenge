@@ -95,6 +95,6 @@ class FeedStoreIntegrationTests: XCTestCase {
 	private var testSpecificStoreURL: URL {
 		FileManager.default.urls(for: .cachesDirectory, in: .userDomainMask)
 			.first!
-			.appendingPathComponent("\(String(describing: type(of: Self.self))).realm")
+			.appendingPathComponent("\(type(of: self)).realm")
 	}
 }
