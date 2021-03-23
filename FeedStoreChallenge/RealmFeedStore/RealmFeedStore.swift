@@ -40,7 +40,7 @@ public final class RealmFeedStore: FeedStore {
 	}
 
 	public func retrieve(completion: @escaping RetrievalCompletion) {
-		guard let realmFeed = realm.objects(RealmFeed.self).first, !realmFeed.realmFeedImages.isEmpty else {
+		guard let realmFeed = realm.objects(RealmFeed.self).first else {
 			return completion(.empty)
 		}
 
